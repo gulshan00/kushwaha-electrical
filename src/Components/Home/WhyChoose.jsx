@@ -1,55 +1,94 @@
+
 import {
-FaAward,
-FaUsers,
-FaClock,
-FaCheckCircle
+  FaAward,
+  FaUsers,
+  FaClock,
+  FaCheckCircle,
 } from "react-icons/fa";
 
-const features=[
-["Experienced Team",<FaUsers/>],
-["Quality Service",<FaAward/>],
-["24/7 Support",<FaClock/>],
-["Certified Engineers",<FaCheckCircle/>]
+const features = [
+  {
+    title: "Experienced Team",
+    icon: <FaUsers />,
+    description:
+      "Our experienced professionals bring knowledge and expertise to every project.",
+  },
+  {
+    title: "Quality Service",
+    icon: <FaAward />,
+    description:
+      "We focus on delivering reliable, high-quality services that meet client expectations.",
+  },
+  {
+    title: "24/7 Support",
+    icon: <FaClock />,
+    description:
+      "Our team is available to provide continuous support whenever you need us.",
+  },
+  {
+    title: "Certified Engineers",
+    icon: <FaCheckCircle />,
+    description:
+      "Skilled and qualified engineers ensure safe and efficient project execution.",
+  },
 ];
 
-const WhyChoose=()=>{
+const WhyChoose = () => {
+  return (
+    <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
-return(
+        {/* Heading */}
+        <div className="mx-auto mb-12 max-w-2xl text-center sm:mb-14">
 
-<section className="bg-blue-700 py-20 text-white">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            Why Choose Us
+          </h2>
 
-<div className="max-w-7xl mx-auto">
+          <div className="mx-auto mt-4 h-1 w-14 rounded-full bg-blue-800"></div>
 
-<h2 className="text-center text-4xl font-bold mb-14">
-Why Choose Us
-</h2>
+          <p className="mt-5 text-sm leading-6 text-gray-500 sm:text-base">
+            We are committed to providing reliable, professional, and
+            high-quality services for every project.
+          </p>
 
-<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+        </div>
 
-{features.map((item,index)=>(
+        {/* Features */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
-<div key={index} className="text-center">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="group rounded-xl border border-gray-200 bg-white px-6 py-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
 
-<div className="text-5xl flex justify-center mb-5">
-{item[1]}
-</div>
+              {/* Icon */}
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gray-100 text-2xl text-gray-700 transition-all duration-300 group-hover:bg-gray-900 group-hover:text-white">
+                {feature.icon}
+              </div>
 
-<h3 className="text-xl font-semibold">
-{item[0]}
-</h3>
+              {/* Title */}
+              <h3 className="mt-5 text-lg font-semibold text-gray-800">
+                {feature.title}
+              </h3>
 
-</div>
+              {/* Small line */}
+              <div className="mx-auto mt-3 h-0.5 w-8 bg-gray-300 transition-all duration-300 group-hover:w-12 group-hover:bg-gray-800"></div>
 
-))}
+              {/* Description */}
+              <p className="mt-4 text-sm leading-6 text-gray-500">
+                {feature.description}
+              </p>
 
-</div>
+            </div>
+          ))}
 
-</div>
+        </div>
 
-</section>
-
-)
-
-}
+      </div>
+    </section>
+  );
+};
 
 export default WhyChoose;

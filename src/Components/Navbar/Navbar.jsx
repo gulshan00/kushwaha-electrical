@@ -83,7 +83,7 @@ const Navbar = () => {
                   </p>
 
                   <h4 className="font-semibold">
-                    +91 9876543210
+                    +91 9381037096
                   </h4>
                 </div>
 
@@ -101,7 +101,7 @@ const Navbar = () => {
                   </p>
 
                   <h4 className="font-semibold">
-                    info@kushwahaelectricals.com
+                    bantykrkushwaha@gmail.com
                   </h4>
                 </div>
 

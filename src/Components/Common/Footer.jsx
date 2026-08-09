@@ -157,7 +157,7 @@ const Footer = () => {
                 <div>
                   <p className="text-white font-medium">Office</p>
                   <p className="text-gray-400">
-                    Delhi NCR,
+                    Bihar
                     <br />
                     India
                   </p>
@@ -173,10 +173,10 @@ const Footer = () => {
                   <p className="text-white font-medium">Phone</p>
 
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+919381037096"
                     className="text-gray-400 hover:text-yellow-400"
                   >
-                    +91 99999 99999
+                    +91 9381037096
                   </a>
                 </div>
               </div>
@@ -190,10 +190,10 @@ const Footer = () => {
                   <p className="text-white font-medium">Email</p>
 
                   <a
-                    href="mailto:info@kushwahaelectrical.com"
+                    href="mailto:bantykrkushwaha@gmail.com"
                     className="text-gray-400 hover:text-yellow-400 break-all"
                   >
-                    info@kushwahaelectrical.com
+                    bantykrkushwaha@gmail.com
                   </a>
                 </div>
               </div>
